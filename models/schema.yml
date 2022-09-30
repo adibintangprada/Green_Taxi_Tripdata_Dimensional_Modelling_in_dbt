@@ -1,0 +1,14 @@
+version : 2
+
+sources:
+    - name: greentaxi_tripdata_2021
+      description : "green taxi trip data in 2021"
+      schema : dbt_abintangpradana
+      tables:
+        - name : green_taxi_tripdata_2021
+
+models:
+  - name: green_taxi_tripdata_2021
+    description: "unioning monthly green taxi trip data into one table"
+  - name: trip_duration_and_distance
+    description: "creating table of green taxi trip duration and distance"
